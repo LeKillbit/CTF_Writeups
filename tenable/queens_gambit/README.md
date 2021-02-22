@@ -1,3 +1,3 @@
 # Queen's Gambit
-Format string vulnerability
+Format string vulnerability  
 Overwrite **exit()** GOT entry with the address of a backdoor function
