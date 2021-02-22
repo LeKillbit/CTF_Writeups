@@ -1,0 +1,97 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_OUTPUT_FILESEP	slash	/slash or backslash/
+!_TAG_OUTPUT_MODE	u-ctags	/u-ctags or e-ctags/
+!_TAG_PATTERN_LENGTH_LIMIT	96	/0 for no limit/
+!_TAG_PROGRAM_AUTHOR	Universal Ctags Team	//
+!_TAG_PROGRAM_NAME	Universal Ctags	/Derived from Exuberant Ctags/
+!_TAG_PROGRAM_URL	https://ctags.io/	/official site/
+!_TAG_PROGRAM_VERSION	0.0.0	//
+ADVERTISEMENT	Account.h	/^	ADVERTISEMENT$/;"	e	enum:ProfileType
+Account	Account.cpp	/^Account::Account(ProfileType pt) {$/;"	f	class:Account
+Account	Account.h	/^class Account {$/;"	c
+AdEnabledAccount	AdEnabledAccount.cpp	/^AdEnabledAccount::AdEnabledAccount(ProfileType profile_type, string ad_type) : Account(profile_t/;"	f	class:AdEnabledAccount
+AdEnabledAccount	AdEnabledAccount.h	/^class AdEnabledAccount : public Account {$/;"	c
+AddAccount	Database.cpp	/^void Database::AddAccount(Account* act) {$/;"	f	class:Database	typeref:typename:void
+AddPost	AdEnabledAccount.cpp	/^void AdEnabledAccount::AddPost(string post) {$/;"	f	class:AdEnabledAccount	typeref:typename:void
+Advertisement	Advertisement.cpp	/^Advertisement::Advertisement(string ad_type) : Account(ProfileType::ADVERTISEMENT) {$/;"	f	class:Advertisement
+Advertisement	Advertisement.h	/^class Advertisement : public Account {$/;"	c
+BUSINESS	Account.h	/^	BUSINESS,$/;"	e	enum:ProfileType
+Business	Business.cpp	/^Business::Business(string name, string address, string status, string ad_type) : AdEnabledAccoun/;"	f	class:Business
+Business	Business.h	/^class Business : public AdEnabledAccount {$/;"	c
+COMMANDS	Console.h	/^class COMMANDS {$/;"	c
+CREATE_PROFILE	Console.cpp	/^string COMMANDS::CREATE_PROFILE = "CREATE_PROFILE";$/;"	m	class:COMMANDS	typeref:typename:string
+CREATE_PROFILE	Console.h	/^	static string CREATE_PROFILE;$/;"	m	class:COMMANDS	typeref:typename:string
+ChangeAdType	Advertisement.cpp	/^bool Advertisement::ChangeAdType(string ad_type) {$/;"	f	class:Advertisement	typeref:typename:bool
+Console	Console.h	/^	Console() : db(new Database()) { }$/;"	f	class:Console
+Console	Console.h	/^class Console {$/;"	c
+CreateBusinessSetup	Console.cpp	/^void Console::CreateBusinessSetup() {$/;"	f	class:Console	typeref:typename:void
+CreateUserSetup	Console.cpp	/^void Console::CreateUserSetup() {$/;"	f	class:Console	typeref:typename:void
+Database	Database.cpp	/^Database::Database() : profile_directory("profiles\/") {$/;"	f	class:Database
+Database	Database.h	/^class Database {$/;"	c
+DisplayRootOptions	Console.cpp	/^void Console::DisplayRootOptions() {$/;"	f	class:Console	typeref:typename:void
+EDIT_PROFILE	Console.cpp	/^string COMMANDS::EDIT_PROFILE = "EDIT_PROFILE";$/;"	m	class:COMMANDS	typeref:typename:string
+EDIT_PROFILE	Console.h	/^	static string EDIT_PROFILE;$/;"	m	class:COMMANDS	typeref:typename:string
+Error	Console.cpp	/^void Console::Error(string msg) {$/;"	f	class:Console	typeref:typename:void
+GetAdText	Advertisement.cpp	/^string Advertisement::GetAdText() {$/;"	f	class:Advertisement	typeref:typename:string
+GetAdType	Advertisement.cpp	/^string Advertisement::GetAdType() {$/;"	f	class:Advertisement	typeref:typename:string
+GetAdTypes	Database.cpp	/^set<string> Database::GetAdTypes() {$/;"	f	class:Database	typeref:typename:set<string>
+GetAddress	Business.cpp	/^string Business::GetAddress() {$/;"	f	class:Business	typeref:typename:string
+GetAdvertisement	Database.cpp	/^Advertisement* Database::GetAdvertisement(string ad_type) {$/;"	f	class:Database	typeref:typename:Advertisement *
+GetAge	User.cpp	/^unsigned int User::GetAge() {$/;"	f	class:User	typeref:typename:unsigned int
+GetGender	User.cpp	/^string User::GetGender() {$/;"	f	class:User	typeref:typename:string
+GetLocation	User.cpp	/^string User::GetLocation() {$/;"	f	class:User	typeref:typename:string
+GetProfileData	Database.cpp	/^Account* Database::GetProfileData(unsigned int profile_id) {$/;"	f	class:Database	typeref:typename:Account *
+GetProfileId	Account.cpp	/^unsigned int Account::GetProfileId() {$/;"	f	class:Account	typeref:typename:unsigned int
+GetProfileIds	Database.cpp	/^vector<unsigned int>  Database::GetProfileIds() {$/;"	f	class:Database	typeref:typename:vector<unsigned int>
+GetProfileType	Account.cpp	/^ProfileType Account::GetProfileType() {$/;"	f	class:Account	typeref:typename:ProfileType
+GetStatus	Business.cpp	/^string Business::GetStatus() {$/;"	f	class:Business	typeref:typename:string
+HandleCreate	Console.cpp	/^void Console::HandleCreate() {$/;"	f	class:Console	typeref:typename:void
+HandleEditProfile	Console.cpp	/^void Console::HandleEditProfile() {$/;"	f	class:Console	typeref:typename:void
+HandleListUsers	Console.cpp	/^void Console::HandleListUsers() {$/;"	f	class:Console	typeref:typename:void
+HandlePost	Console.cpp	/^void Console::HandlePost() {$/;"	f	class:Console	typeref:typename:void
+HandleRoot	Console.cpp	/^void Console::HandleRoot(){$/;"	f	class:Console	typeref:typename:void
+HandleViewProfile	Console.cpp	/^void Console::HandleViewProfile() {$/;"	f	class:Console	typeref:typename:void
+IsAdTypeValid	Advertisement.cpp	/^bool Advertisement::IsAdTypeValid(string ad_type) {$/;"	f	class:Advertisement	typeref:typename:bool
+LIST_USERS	Console.cpp	/^string COMMANDS::LIST_USERS = "LIST_USERS";$/;"	m	class:COMMANDS	typeref:typename:string
+LIST_USERS	Console.h	/^	static string LIST_USERS;$/;"	m	class:COMMANDS	typeref:typename:string
+LoadAccounts	Database.cpp	/^void Database::LoadAccounts() {$/;"	f	class:Database	typeref:typename:void
+LoadProfile	Database.cpp	/^void Database::LoadProfile(string profiledata) {$/;"	f	class:Database	typeref:typename:void
+LookupProfileId	Console.cpp	/^Account* Console::LookupProfileId(string profile_id) {$/;"	f	class:Console	typeref:typename:Account *
+Open	Console.cpp	/^void Console::Open(){$/;"	f	class:Console	typeref:typename:void
+PERSON	Account.h	/^	PERSON,$/;"	e	enum:ProfileType
+POST	Console.cpp	/^string COMMANDS::POST = "POST";$/;"	m	class:COMMANDS	typeref:typename:string
+POST	Console.h	/^	static string POST;$/;"	m	class:COMMANDS	typeref:typename:string
+ParseProfile	Database.cpp	/^vector<string> Database::ParseProfile(string profiledata) {$/;"	f	class:Database	typeref:typename:vector<string>
+ProfileType	Account.h	/^enum ProfileType {$/;"	g
+ShowAd	Console.cpp	/^void Console::ShowAd(string ad_type) {$/;"	f	class:Console	typeref:typename:void
+TokenizeCommand	Console.cpp	/^vector<string> Console::TokenizeCommand() {$/;"	f	class:Console	typeref:typename:vector<string>
+User	User.cpp	/^User::User(string name, string location, unsigned int age, string gender, string status, string /;"	f	class:User
+User	User.h	/^class User : public AdEnabledAccount {$/;"	c
+VIEW_PROFILE	Console.cpp	/^string COMMANDS::VIEW_PROFILE = "VIEW_PROFILE";$/;"	m	class:COMMANDS	typeref:typename:string
+VIEW_PROFILE	Console.h	/^	static string VIEW_PROFILE;$/;"	m	class:COMMANDS	typeref:typename:string
+account_creation_date	Account.h	/^	time_t account_creation_date;$/;"	m	class:Account	typeref:typename:time_t
+account_name	Account.h	/^	string account_name;$/;"	m	class:Account	typeref:typename:string
+accounts	Database.h	/^	map<unsigned int, Account*> accounts;$/;"	m	class:Database	typeref:typename:map<unsigned int,Account * >
+ad_text	Advertisement.h	/^	char ad_text[0xf00];$/;"	m	class:Advertisement	typeref:typename:char[0xf00]
+ad_type	AdEnabledAccount.h	/^	string ad_type;$/;"	m	class:AdEnabledAccount	typeref:typename:string
+ad_type	Advertisement.h	/^	string ad_type;$/;"	m	class:Advertisement	typeref:typename:string
+address	Business.h	/^	string address;$/;"	m	class:Business	typeref:typename:string
+advertisers_directory	Advertisement.h	/^    char advertisers_directory[0x100] = "advertisements\/";$/;"	m	class:Advertisement	typeref:typename:char[0x100]
+age	User.h	/^	unsigned int age;$/;"	m	class:User	typeref:typename:unsigned int
+cmd	Console.h	/^	string cmd;$/;"	m	class:Console	typeref:typename:string
+db	Console.h	/^	Database* db;$/;"	m	class:Console	typeref:typename:Database *
+gender	User.h	/^	string gender;$/;"	m	class:User	typeref:typename:string
+is_digits	Console.cpp	/^bool is_digits(const std::string& str)$/;"	f	typeref:typename:bool
+last_post	AdEnabledAccount.h	/^	char last_post[0x1000];$/;"	m	class:AdEnabledAccount	typeref:typename:char[0x1000]
+location	User.h	/^	string location;$/;"	m	class:User	typeref:typename:string
+main	Friendzone.cpp	/^int main() {$/;"	f	typeref:typename:int
+posts	Account.h	/^	vector<string> posts;$/;"	m	class:Account	typeref:typename:vector<string>
+posts	AdEnabledAccount.h	/^	vector<string> posts;$/;"	m	class:AdEnabledAccount	typeref:typename:vector<string>
+profile_directory	Database.h	/^	const string profile_directory;$/;"	m	class:Database	typeref:typename:const string
+profile_id	Account.h	/^	unsigned int profile_id;$/;"	m	class:Account	typeref:typename:unsigned int
+profile_pic	Account.h	/^	string profile_pic;$/;"	m	class:Account	typeref:typename:string
+profile_type	Account.h	/^	ProfileType profile_type;$/;"	m	class:Account	typeref:typename:ProfileType
+root_cmds	Console.h	/^	COMMANDS root_cmds;$/;"	m	class:Console	typeref:typename:COMMANDS
+status	AdEnabledAccount.h	/^	string status;$/;"	m	class:AdEnabledAccount	typeref:typename:string
+users_directory	Account.h	/^	const string users_directory;$/;"	m	class:Account	typeref:typename:const string
